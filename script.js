@@ -1,4 +1,4 @@
-let containerSize = 500;
+let containerSize = 550;
 let nSquare=16;
 
 //get the neccessary DOM elements
@@ -7,6 +7,7 @@ const sizeBtn= document.querySelector("button")
 const body = document.querySelector("body")
 const sizeText = document.querySelector("#sizeText")
 const clearBtn = document.querySelector("#clearGrid")
+const randomColorBtn = document.querySelector("#randomColor")
 
 //event listener that allows one to enter a new number of squares
 sizeBtn.addEventListener("click",()=>{
@@ -23,6 +24,12 @@ sizeBtn.addEventListener("click",()=>{
     body.appendChild(sizeText)
     
  })
+
+function getRandomColor(){
+    return Math.floor(Math.random()*255)
+}
+
+
 
  
 
@@ -43,6 +50,15 @@ function createGrid(nSquare){
             clearBtn.addEventListener("click", ()=>{
                 square.style.background = "white"
             })
+            randomColorBtn.addEventListener("click",()=>{
+                square.addEventListener("mouseenter",()=>{
+                    square.style.background = `rgb(${getRandomColor()},${getRandomColor()},${getRandomColor()})`
+                    
+                })
+            })
+            
+
+            
         }
         
     }
@@ -53,7 +69,7 @@ function createGrid(nSquare){
  
  //basic styles
  sizeText.setAttribute("style",
-    "font-size:20px")
+    "font-size:20px; color:white; font-weight:bold")
 clearBtn.setAttribute("style",
-    "font-size:1.5em"
+    "font-size:20px"
 )
