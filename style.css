@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container{
+    margin: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    
+    
+}
+
+#squaredivs{
+    
+    border: 1px solid black ;
+    box-sizing: border-box;
+
+}
