@@ -1,6 +1,6 @@
 # sketchpad
-<h3>this is a sketchpad utilizing blocks or squares to draw or sketch<3>
-I used this project to Utilize
+<h2>this is a sketchpad utilizing blocks or squares to draw or sketch<h2>
+<h3>I used this project to Utilize</h3>
 <ul>
   <li>JavaScript</li>
   <li>DOM Manipulation</li>
