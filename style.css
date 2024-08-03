@@ -1,9 +1,12 @@
 body {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     margin: 0;
+    background-image: url(image/pexels-rovenimages-com-344613-949587.jpg);
+    
 }
 
 #container{
@@ -11,8 +14,11 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 500px;
-    height: 500px;
+    align-items: center;
+    width: 550px;
+    height: 550px;
+    background-color: white;
+    border: 20px solid beige;
     
     
 }
@@ -22,4 +28,36 @@ body {
     border: 1px solid black ;
     box-sizing: border-box;
 
+}
+button{
+    width: 100px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: antiquewhite;
+}
+
+#gridSize:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: antiquewhite;
+  
+}
+
+#clearGrid:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: wheat;
+    
+}
+
+
+#buttons{
+    margin-top: 70px;
+    display: flex;
+    text-align: center;
+    gap: 10px;
 }
